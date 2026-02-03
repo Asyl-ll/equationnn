@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>tendeu</title>
+<script>
+    function tendeu(q){
+        var a=(q.a.value)
+        var b=(q.b.value)
+        var c=(q.c.value)
+        var d=((Math.pow(b,2))-4*a*c)
+    	if (d>0){
+	var x1=((-b +Math.sqrt(d))/(2*a));
+	var x2=((-b -Math.sqrt(d))/(2*a));
+	x1=Math.round(x1*100)/100;
+	x2=Math.round(x2*100)/100;	
+	}
+	else if (d==0){
+		var x1=-b/(2*a);
+	}
+    else if (d<0){
+        var x1="NULL"
+        var x2="NULL"
+    }
+        q.disk.value=d
+        q.x1.value=x1
+        q.x2.value=x2
+        q.disk.value=value(disk)
+        q.x1.value=value(x1)
+        q.x2.value=value(x2)
+    }
+</script>
+</head>
+<body>
+    <h1>Kvadrat tendeu</h1>
+    <form name=esep1>
+        <b>A</b>
+        <input type="text" name="a"> <br> <br>
+        <b>B</b>
+        <input type="text" name="b"> <br> <br>
+        <b>C</b>
+        <input type="text" name="c"> <br> <br>
+        <b>DISK</b>
+        <input type="text" name="disk"><br> <br>
+        <b>X1</b>
+        <input type="text" name="x1"><br> <br>
+        <b>X2</b>
+        <input type="text" name="x2"><br> <br>
+        <input type="button" name="btn1" value="Shygaru" onclick="tendeu(esep1)">
+        <input type="button" name="btn2" value="onload" onload="tendeu(esep1)">
+        <input type="button" name="btn3" value="ondblclick" ondblclick="tendeu(esep1)">
+        <input type="button" name="btn4" value="onmousedown" onmousedown="tendeu(esep1)">
+        <input type="button" name="btn5" value="onmouseover" onmouseover="tendeu(esep1)">
+        <input type="button" name="btn6" value="onmouseout" onmouseout="tendeu(esep1)">
+        <input type="button" name="btn7" value="onfocus" onfocus="tendeu(esep1)">
+        <input type="button" name="btn8" value="onblur" onblur="tendeu(esep1)">
+        <input type="button" name="btn9" value="onkeypress" onkeypress="tendeu(esep1)">
+        <input type="button" name="btn10" value="onkeydown" onkeydown="tendeu(esep1)">
+        <input type="button" name="btn11" value="onkeyup" onkeyup="tendeu(esep1)">
+        <input type="button" name="btn12" value="onsubmit" onsubmit="tendeu(esep1)">
+        <input type="button" name="btn13" value="onreset" onreset="tendeu(esep1)">
+        <input type="button" name="btn14" value="onselect" onselect="tendeu(esep1)">
+        <input type="reset" name="rst1" value="Zhanartu">
+    </form>
+</body>
+</html>
